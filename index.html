@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personalized yoga and personal training designed around your body, your goals, and the way you want to feel. Strength, mobility, flexibility, and recovery — all in one approach.">
+    <title>TATVA CIRCLE | Personalized Yoga & Personal Training</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="#" class="navbar__logo">tatva<span>circle</span></a>
+
+            <div class="navbar__links" id="nav-links">
+                <a href="#about" class="navbar__link">About</a>
+                <a href="#programs" class="navbar__link">Programs</a>
+                <a href="#training" class="navbar__link">Personal Training</a>
+                <a href="#yoga-path" class="navbar__link">Yoga</a>
+                <a href="#approach" class="navbar__link">Approach</a>
+                <a href="#results" class="navbar__link">Results</a>
+                <a href="#testimonials" class="navbar__link">Testimonials</a>
+                <a href="#contact" class="navbar__link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <a href="#booking" class="btn btn--primary btn--sm navbar__cta">Book a Consultation</a>
+            </div>
+
+            <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-menu__link">About</a>
+        <a href="#programs" class="mobile-menu__link">Programs</a>
+        <a href="#training" class="mobile-menu__link">Personal Training</a>
+        <a href="#yoga-path" class="mobile-menu__link">Yoga</a>
+        <a href="#approach" class="mobile-menu__link">Approach</a>
+        <a href="#results" class="mobile-menu__link">Results</a>
+        <a href="#testimonials" class="mobile-menu__link">Testimonials</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+        <a href="#booking" class="btn btn--primary btn--lg mobile-menu__cta">Book a Consultation</a>
+        <button class="theme-toggle theme-toggle--mobile" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+            <span class="theme-toggle__label">Dark Mode</span>
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+    </div>
+
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        Personalized Yoga & Training
+                    </div>
+                    <h1 class="hero__title">Move Better.<br>Get Stronger.<br><span>Feel Better.</span></h1>
+                    <p class="hero__subtitle">Personalized yoga and training designed around your body, your goals, and the way you want to feel.</p>
+
+                    <div class="btn-group">
+                        <a href="#booking" class="btn btn--primary btn--lg">Start Your Journey</a>
+                        <a href="#programs" class="btn btn--secondary btn--lg">Explore Programs</a>
+                    </div>
+
+                    <div class="hero__cred">
+                        <div class="hero__cred-item">
+                            <div class="hero__cred-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <span class="hero__cred-label">Personalized Programs</span>
+                        </div>
+                        <div class="hero__cred-item">
+                            <div class="hero__cred-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </div>
+                            <span class="hero__cred-label">1:1 Coaching</span>
+                        </div>
+                        <div class="hero__cred-item">
+                            <div class="hero__cred-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14"/><path d="M2 20h20"/><path d="M14 12v.01"/></svg>
+                            </div>
+                            <span class="hero__cred-label">Yoga + Strength</span>
+                        </div>
+                        <div class="hero__cred-item">
+                            <div class="hero__cred-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <span class="hero__cred-label">Sustainable Progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrapper reveal">
+                    <img src="assets/hero.jpg" alt="Personal trainer coaching a client through a yoga-strength exercise in a bright modern wellness studio" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== GOALS SECTION ========== -->
+    <section class="section section--alt" id="goals">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Your Goals</span>
+                <h2 class="section-title">What are you working toward?</h2>
+                <p class="section-subtitle mx-auto">Choose what matters most to you. Your training can evolve with your goals.</p>
+            </div>
+
+            <div class="goals-grid" id="goals-grid">
+                <!-- Goal cards rendered by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== PHILOSOPHY ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="philosophy__grid">
+                <div class="philosophy__image reveal">
+                    <img src="assets/hero.jpg" alt="Person practicing yoga in a bright serene studio environment">
+                </div>
+                <div class="philosophy__content reveal">
+                    <span class="section-badge">Our Philosophy</span>
+                    <h2 class="section-title">Strength and flexibility shouldn't be separate.</h2>
+                    <p class="philosophy__text">We believe the strongest bodies are also the most mobile. The most flexible bodies are also the most stable. Our approach combines strength, mobility, flexibility, stability, recovery, and mindfulness into one unified practice — so you can build a body that is resilient, capable, and free from limitation.</p>
+
+                    <div class="philosophy__pillars">
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+                            <span>Strength</span>
+                        </div>
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                            <span>Mobility</span>
+                        </div>
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="m5 12-2 2 9 9 9-9-2-2"/><path d="M5 12V2h14v10"/></svg>
+                            <span>Flexibility</span>
+                        </div>
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Stability</span>
+                        </div>
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+                            <span>Recovery</span>
+                        </div>
+                        <div class="philosophy__pillar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            <span>Mindfulness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== TWO PATHS ========== -->
+    <section class="section section--alt" id="yoga-path">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Two Core Paths</span>
+                <h2 class="section-title">Two disciplines. One integrated approach.</h2>
+                <p class="section-subtitle mx-auto">Yoga and personal training are complementary, not competing. Together they create something stronger than either alone.</p>
+            </div>
+
+            <div class="paths__grid">
+                <!-- Yoga Card -->
+                <div class="path-card reveal">
+                    <div class="path-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3 class="path-card__title">Yoga</h3>
+                    <p class="path-card__desc">Build flexibility, mobility, balance, body awareness, breathing, and mindfulness. A practice rooted in movement, breath, and presence.</p>
+                    <div class="path-card__features">
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Flexibility
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Mobility
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Balance
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Recovery
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Stress Management
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Mindfulness
+                        </span>
+                    </div>
+                    <a href="#programs" class="btn btn--secondary">Explore Yoga</a>
+                </div>
+
+                <!-- Personal Training Card -->
+                <div class="path-card reveal reveal-delay-2" id="training">
+                    <div class="path-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+                    </div>
+                    <h3 class="path-card__title">Personal Training</h3>
+                    <p class="path-card__desc">Build strength, endurance, stability, movement quality, and physical confidence with personalized training designed for you.</p>
+                    <div class="path-card__features">
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Strength
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Endurance
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Stability
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Muscle Development
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Movement Quality
+                        </span>
+                        <span class="path-card__feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            Functional Fitness
+                        </span>
+                    </div>
+                    <a href="#programs" class="btn btn--secondary">Explore Personal Training</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== COMBINED TRAINING ========== -->
+    <section class="section" id="approach">
+        <div class="container">
+            <div class="combined__wrapper">
+                <div class="reveal">
+                    <span class="section-badge">The Complete Approach</span>
+                    <h2 class="section-title">Why choose one when your body needs both?</h2>
+                </div>
+
+                <div class="combined__flow reveal">
+                    <div class="combined__node">
+                        <div class="combined__node-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <span class="combined__node-label">Yoga</span>
+                    </div>
+                    <div class="combined__connector"></div>
+                    <div class="combined__node">
+                        <div class="combined__node-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <span class="combined__node-label">Mobility</span>
+                    </div>
+                    <div class="combined__connector"></div>
+                    <div class="combined__node">
+                        <div class="combined__node-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6.5 6.5 11 11"/><path d="m21 21-1-1"/><path d="m3 3 1 1"/><path d="m18 22 4-4"/><path d="m2 6 4-4"/><path d="m3 10 7-7"/><path d="m14 21 7-7"/></svg>
+                        </div>
+                        <span class="combined__node-label">Strength</span>
+                    </div>
+                    <div class="combined__connector"></div>
+                    <div class="combined__node">
+                        <div class="combined__node-circle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+                        </div>
+                        <span class="combined__node-label">Recovery</span>
+                    </div>
+                </div>
+
+                <p class="combined__text reveal">Yoga builds the awareness and flexibility your body needs to move safely under load. Strength training builds the resilience and power your body needs to hold challenging postures. Together, they create a complete system for sustainable physical health.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== PERSONALIZED PROCESS ========== -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Your Journey</span>
+                <h2 class="section-title">Your body. Your goals. Your plan.</h2>
+                <p class="section-subtitle mx-auto">Every person's training should be different. Here's how we build something that works for you.</p>
+            </div>
+
+            <div class="process__grid">
+                <div class="process-card reveal">
+                    <div class="process-card__num">01</div>
+                    <div class="process-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <h3 class="process-card__title">Understand</h3>
+                    <p class="process-card__desc">Learn about your goals, lifestyle, movement history, experience level, and the challenges you're facing.</p>
+                </div>
+                <div class="process-card reveal reveal-delay-1">
+                    <div class="process-card__num">02</div>
+                    <div class="process-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3 class="process-card__title">Assess</h3>
+                    <p class="process-card__desc">Understand your current mobility, strength, stability, flexibility, and movement patterns through hands-on assessment.</p>
+                </div>
+                <div class="process-card reveal reveal-delay-2">
+                    <div class="process-card__num">03</div>
+                    <div class="process-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                    </div>
+                    <h3 class="process-card__title">Plan</h3>
+                    <p class="process-card__desc">Create a fully individualized training approach that combines the right balance of yoga, strength, mobility, and recovery.</p>
+                </div>
+                <div class="process-card reveal reveal-delay-3">
+                    <div class="process-card__num">04</div>
+                    <div class="process-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3 class="process-card__title">Progress</h3>
+                    <p class="process-card__desc">Track your progress and continuously adjust the program. Your training evolves as you do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== PROGRAMS ========== -->
+    <section class="section" id="programs">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Programs</span>
+                <h2 class="section-title">Find the right program for you.</h2>
+                <p class="section-subtitle mx-auto">Each program is designed to be personalized. Start with a structure, then make it yours.</p>
+            </div>
+
+            <div class="programs__grid">
+                <div class="program-card reveal">
+                    <div class="program-card__image">
+                        <img src="assets/program-strength.jpg" alt="Strength training with kettlebell in a modern studio">
+                    </div>
+                    <div class="program-card__body">
+                        <h3 class="program-card__title">Strength Foundations</h3>
+                        <p class="program-card__desc">Build strength and confidence through progressive resistance training. Master fundamental movement patterns with expert guidance.</p>
+                        <div class="program-card__tags">
+                            <span class="program-card__tag">Strength</span>
+                            <span class="program-card__tag">Confidence</span>
+                            <span class="program-card__tag">Progressive</span>
+                        </div>
+                        <a href="#booking" class="btn btn--secondary btn--sm">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program-card reveal reveal-delay-1">
+                    <div class="program-card__image">
+                        <img src="assets/program-mobility.jpg" alt="Person performing mobility stretch on a mat">
+                    </div>
+                    <div class="program-card__body">
+                        <h3 class="program-card__title">Mobility & Movement</h3>
+                        <p class="program-card__desc">Improve range of motion and movement quality. Build a body that moves freely without pain or restriction.</p>
+                        <div class="program-card__tags">
+                            <span class="program-card__tag">Mobility</span>
+                            <span class="program-card__tag">Movement</span>
+                            <span class="program-card__tag">Freedom</span>
+                        </div>
+                        <a href="#booking" class="btn btn--secondary btn--sm">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program-card reveal reveal-delay-2">
+                    <div class="program-card__image">
+                        <img src="assets/program-yoga.jpg" alt="Woman practicing warrior III yoga pose">
+                    </div>
+                    <div class="program-card__body">
+                        <h3 class="program-card__title">Yoga & Flexibility</h3>
+                        <p class="program-card__desc">Develop flexibility, balance, breathing, and body awareness through a thoughtful yoga practice tailored to your level.</p>
+                        <div class="program-card__tags">
+                            <span class="program-card__tag">Flexibility</span>
+                            <span class="program-card__tag">Balance</span>
+                            <span class="program-card__tag">Awareness</span>
+                        </div>
+                        <a href="#booking" class="btn btn--secondary btn--sm">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program-card reveal">
+                    <div class="program-card__image">
+                        <img src="assets/program-combined.jpg" alt="Person combining yoga and dumbbell exercises">
+                    </div>
+                    <div class="program-card__body">
+                        <h3 class="program-card__title">Strength + Yoga</h3>
+                        <p class="program-card__desc">A complete combination of strength training, mobility work, yoga, and recovery — for people who want a truly balanced approach.</p>
+                        <div class="program-card__tags">
+                            <span class="program-card__tag">Complete</span>
+                            <span class="program-card__tag">Balanced</span>
+                            <span class="program-card__tag">Integrated</span>
+                        </div>
+                        <a href="#booking" class="btn btn--secondary btn--sm">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="program-card reveal reveal-delay-1">
+                    <div class="program-card__image">
+                        <img src="assets/program-recovery.jpg" alt="Person in restorative yoga pose with foam roller">
+                    </div>
+                    <div class="program-card__body">
+                        <h3 class="program-card__title">Recovery & Wellbeing</h3>
+                        <p class="program-card__desc">Focus on recovery, stress management, mobility, and sustainable movement. Designed for people who want to feel better every day.</p>
+                        <div class="program-card__tags">
+                            <span class="program-card__tag">Recovery</span>
+                            <span class="program-card__tag">Stress Relief</span>
+                            <span class="program-card__tag">Sustainable</span>
+                        </div>
+                        <a href="#booking" class="btn btn--secondary btn--sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== COACH PROFILE ========== -->
+    <section class="section section--alt" id="coach">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Your Guide</span>
+                <h2 class="section-title">Meet Your Coach</h2>
+            </div>
+
+            <div class="coach__grid">
+                <div class="coach__photo-wrapper reveal">
+                    <img src="assets/WhatsApp Image 2026-08-16 at 6.32.02 PM.jpeg" alt="Professional portrait of Coach Pratake" class="coach__photo">
+                </div>
+                <div class="reveal">
+                    <h3 class="coach__name">Pratake</h3>
+                    <p class="coach__title-role">Yoga Instructor & Personal Trainer</p>
+                    <p class="coach__bio">With over a decade of experience in both yoga instruction and strength coaching, I've built my practice around one simple belief: your body deserves an approach that is as unique as you are. I combine the precision of personal training with the mindfulness of yoga to help people move better, get stronger, and feel more confident in their bodies.</p>
+
+                    <div class="coach__creds">
+                        <div class="coach__cred-group">
+                            <h4>Experience</h4>
+                            <ul class="coach__cred-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    10+ Years of Coaching
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    500+ Clients Trained
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    International Workshops
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="coach__cred-group">
+                            <h4>Qualifications</h4>
+                            <ul class="coach__cred-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    E-RYT 500 (Yoga Alliance)
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    CSCS — Strength & Conditioning
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    FRC Mobility Specialist
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="coach__cred-group">
+                            <h4>Specializations</h4>
+                            <ul class="coach__cred-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Functional Strength Training
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Vinyasa & Hatha Yoga
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Mobility & Joint Health
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="coach__cred-group">
+                            <h4>Philosophy</h4>
+                            <ul class="coach__cred-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Sustainable over extreme
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Movement is medicine
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                                    Progress, not perfection
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== STATS ========== -->
+    <section class="section section--dark" id="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat-card reveal">
+                    <div class="stat-card__value" data-target="10">0</div>
+                    <div class="stat-card__label">Years Experience</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-1">
+                    <div class="stat-card__value" data-target="500">0</div>
+                    <div class="stat-card__label">Clients Coached</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-2">
+                    <div class="stat-card__value" data-target="6">0</div>
+                    <div class="stat-card__label">Certifications</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-3">
+                    <div class="stat-card__value" data-target="100">0</div>
+                    <div class="stat-card__label">% Personalized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== RESULTS ========== -->
+    <section class="section" id="results">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Real Outcomes</span>
+                <h2 class="section-title">Real people. Real progress.</h2>
+                <p class="section-subtitle mx-auto">Meaningful outcomes focused on how people move and feel — not just how they look.</p>
+            </div>
+
+            <div class="results__grid">
+                <div class="result-card reveal">
+                    <span class="result-card__goal">Mobility + Strength</span>
+                    <h3 class="result-card__name">Sarah M.</h3>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Starting Point</div>
+                        <div class="result-card__detail-text">Chronic lower back tension from desk work. Limited hip mobility. No previous strength training experience.</div>
+                    </div>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Outcome</div>
+                        <div class="result-card__detail-text">Pain-free for the first time in years. Consistently training 4x/week. Deadlifting bodyweight. Full depth squat achieved.</div>
+                    </div>
+                    <p class="result-card__quote">"I came in barely able to touch my toes. Now I'm deadlifting and doing yoga — and my back hasn't felt this good in a decade."</p>
+                </div>
+
+                <div class="result-card reveal reveal-delay-1">
+                    <span class="result-card__goal">Flexibility + Recovery</span>
+                    <h3 class="result-card__name">James K.</h3>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Starting Point</div>
+                        <div class="result-card__detail-text">Former athlete with accumulated joint stiffness. High stress levels. Irregular exercise habits.</div>
+                    </div>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Outcome</div>
+                        <div class="result-card__detail-text">Recovered full shoulder mobility. Consistent 3x/week practice. Stress reduced through breathwork and mindful movement.</div>
+                    </div>
+                    <p class="result-card__quote">"The combination of strength work and yoga was exactly what my body needed after years of just pushing harder."</p>
+                </div>
+
+                <div class="result-card reveal reveal-delay-2">
+                    <span class="result-card__goal">Consistency + Confidence</span>
+                    <h3 class="result-card__name">Priya R.</h3>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Starting Point</div>
+                        <div class="result-card__detail-text">Complete beginner. Felt intimidated by gyms. Wanted to feel stronger and more capable in everyday life.</div>
+                    </div>
+                    <div class="result-card__detail">
+                        <div class="result-card__detail-label">Outcome</div>
+                        <div class="result-card__detail-text">6-month streak of consistent training. Improved posture and core stability. Carries groceries up 3 flights of stairs easily.</div>
+                    </div>
+                    <p class="result-card__quote">"For the first time in my life, I actually look forward to training. It doesn't feel like punishment — it feels like taking care of myself."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section section--alt" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What clients are saying.</h2>
+            </div>
+
+            <div class="testimonials__slider reveal" id="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <span class="testimonial__quote-mark">"</span>
+                    <p class="testimonial__text">Working with Pratake completely changed how I think about fitness. It's not about pushing harder — it's about moving smarter. My body has never felt this balanced.</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">AK</div>
+                        <div>
+                            <div class="testimonial__name">Anika K.</div>
+                            <div class="testimonial__meta">Strength + Yoga Program</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <span class="testimonial__quote-mark">"</span>
+                    <p class="testimonial__text">I've worked with personal trainers before, but this was the first time someone truly listened to what I needed. The personalized approach made all the difference.</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">DM</div>
+                        <div>
+                            <div class="testimonial__name">David M.</div>
+                            <div class="testimonial__meta">Personal Training</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <span class="testimonial__quote-mark">"</span>
+                    <p class="testimonial__text">I started yoga thinking it was just stretching. Through this program, I discovered it was the missing piece my training needed. Stronger, more flexible, and genuinely calmer.</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">RL</div>
+                        <div>
+                            <div class="testimonial__name">Rachel L.</div>
+                            <div class="testimonial__meta">Yoga & Flexibility Program</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <span class="testimonial__quote-mark">"</span>
+                    <p class="testimonial__text">The recovery program gave me my life back. After years of chronic shoulder pain, I'm finally moving freely again. Patient, knowledgeable, and genuinely cares about results.</p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MT</div>
+                        <div>
+                            <div class="testimonial__name">Marcus T.</div>
+                            <div class="testimonial__meta">Recovery & Wellbeing Program</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls reveal">
+                <button class="slider-arrow" id="slider-prev" aria-label="Previous testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <div class="slider-dots" id="slider-dots">
+                    <button class="slider-dot active" aria-label="Go to testimonial 1"></button>
+                    <button class="slider-dot" aria-label="Go to testimonial 2"></button>
+                    <button class="slider-dot" aria-label="Go to testimonial 3"></button>
+                    <button class="slider-dot" aria-label="Go to testimonial 4"></button>
+                </div>
+                <button class="slider-arrow" id="slider-next" aria-label="Next testimonial">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Getting Started</span>
+                <h2 class="section-title">How it works.</h2>
+                <p class="section-subtitle mx-auto">Four simple steps to start training smarter.</p>
+            </div>
+
+            <div class="hiw__grid">
+                <div class="hiw-card reveal">
+                    <div class="hiw-card__num">01</div>
+                    <h3 class="hiw-card__title">Book</h3>
+                    <p class="hiw-card__desc">Book your free consultation. Pick a time that works for you.</p>
+                </div>
+                <div class="hiw-card reveal reveal-delay-1">
+                    <div class="hiw-card__num">02</div>
+                    <h3 class="hiw-card__title">Discover</h3>
+                    <p class="hiw-card__desc">Discuss your goals, current lifestyle, movement experience, and what you'd like to achieve.</p>
+                </div>
+                <div class="hiw-card reveal reveal-delay-2">
+                    <div class="hiw-card__num">03</div>
+                    <h3 class="hiw-card__title">Personalize</h3>
+                    <p class="hiw-card__desc">Receive a training approach designed specifically around your body and your goals.</p>
+                </div>
+                <div class="hiw-card reveal reveal-delay-3">
+                    <div class="hiw-card__num">04</div>
+                    <h3 class="hiw-card__title">Progress</h3>
+                    <p class="hiw-card__desc">Train, track, adapt, and improve. Your program evolves with you.</p>
+                </div>
+            </div>
+
+            <div class="text-center reveal" style="margin-top: 48px;">
+                <a href="#booking" class="btn btn--primary btn--lg">Book Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== BOOKING / CONSULTATION ========== -->
+    <section class="section section--alt" id="booking">
+        <div class="container">
+            <div class="booking__grid">
+                <div class="reveal">
+                    <span class="section-badge">Get Started</span>
+                    <h2 class="section-title">Ready to start moving differently?</h2>
+                    <p class="philosophy__text">Let's build a training approach that works for your body and your goals. Book a free consultation to discuss your needs, ask questions, and find the right path forward.</p>
+
+                    <div style="margin-top: 40px;">
+                        <div class="philosophy__pillar" style="margin-bottom: 12px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            <span>Free 30-minute consultation</span>
+                        </div>
+                        <div class="philosophy__pillar" style="margin-bottom: 12px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            <span>No commitment required</span>
+                        </div>
+                        <div class="philosophy__pillar" style="margin-bottom: 12px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/></svg>
+                            <span>In-person or virtual available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="booking__form reveal" id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-name">Full Name</label>
+                            <input type="text" id="booking-name" class="form-control" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-email">Email</label>
+                            <input type="email" id="booking-email" class="form-control" placeholder="you@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-phone">Phone</label>
+                            <input type="tel" id="booking-phone" class="form-control" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-session">Session Type</label>
+                            <select id="booking-session" class="form-control">
+                                <option value="">Select a session type</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="yoga">Yoga Session</option>
+                                <option value="training">Personal Training</option>
+                                <option value="combined">Combined (Yoga + Training)</option>
+                                <option value="recovery">Recovery & Mobility</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-goal">What are your main goals?</label>
+                        <textarea id="booking-goal" class="form-control" placeholder="Tell us about your goals, experience level, and anything else you'd like us to know..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Book Your Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== FAQ ========== -->
+    <section class="section" id="faq" id="contact">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-badge">Common Questions</span>
+                <h2 class="section-title">Frequently asked questions.</h2>
+            </div>
+
+            <div class="faq__list reveal" id="faq-list">
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Is this yoga or personal training?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>It's both — and it's designed that way intentionally. We combine yoga, strength training, mobility work, and recovery into one personalized approach. You can focus on one area or experience the full integrated program.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Can I combine yoga and strength training?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Absolutely. In fact, that's our specialty. Yoga builds the flexibility, mobility, and body awareness that makes strength training safer and more effective. Strength training builds the resilience that makes advanced yoga postures more accessible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Do I need previous training experience?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Not at all. Every program is fully personalized. Whether you're a complete beginner or an experienced practitioner, the training is adapted to meet you exactly where you are.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Is the program suitable for beginners?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Yes, completely. Many of our clients start with zero experience. We build a progressive program that develops your confidence and skills over time at a pace that feels right for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        How often should I train?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>That depends on your goals and schedule. Most clients train 2–4 times per week. We'll recommend a frequency that aligns with your lifestyle and goals during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Can the program be customized around injuries or limitations?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Yes. Personalization is at the core of everything we do. If you have injuries, limitations, or specific concerns, we design the program around your needs and work within your body's boundaries to help you progress safely.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        Do you offer online sessions?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Yes. We offer both in-person and virtual sessions. Online sessions are conducted via video call with the same level of personalization and attention as in-studio sessions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question" aria-expanded="false">
+                        How do I get started?
+                        <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Book a free consultation. We'll discuss your goals, answer your questions, and if it's a good fit, we'll design a plan to get you started. There's no commitment or obligation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== FINAL CTA ========== -->
+    <section class="final-cta">
+        <div class="container reveal">
+            <h2 class="final-cta__title">Build a stronger, more capable body.</h2>
+            <p class="final-cta__subtitle">Train for strength. Move with freedom. Recover with intention.</p>
+            <a href="#booking" class="btn btn--white btn--lg btn--pill">Start Your Journey</a>
+        </div>
+    </section>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand-name">tatva<span>circle</span></div>
+                    <p class="footer__brand-desc">Personalized yoga and personal training designed around your body, your goals, and the way you want to feel. Strength, mobility, flexibility, and recovery — all in one approach.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Navigation</h4>
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#programs" class="footer__link">Programs</a>
+                    <a href="#approach" class="footer__link">Approach</a>
+                    <a href="#results" class="footer__link">Results</a>
+                    <a href="#testimonials" class="footer__link">Testimonials</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Programs</h4>
+                    <a href="#programs" class="footer__link">Strength Foundations</a>
+                    <a href="#programs" class="footer__link">Mobility & Movement</a>
+                    <a href="#programs" class="footer__link">Yoga & Flexibility</a>
+                    <a href="#programs" class="footer__link">Strength + Yoga</a>
+                    <a href="#programs" class="footer__link">Recovery & Wellbeing</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contact</h4>
+                    <a href="mailto:hello@tatvacircle.com" class="footer__link">hello@tatvacircle.com</a>
+                    <a href="tel:+15550001234" class="footer__link">+1 (555) 000-1234</a>
+                    <a href="#" class="footer__link">Austin, Texas</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span>&copy; 2026 Tatva Circle. All rights reserved.</span>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/tattvacircle_/" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://www.idonate.ie/fundraiser/pratikupreti" aria-label="iDonate" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4.5a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 7 7.5 1.5 1.5 0 0 1 5.5 6 1.5 1.5 0 0 1 7 4.5z"/><path d="M5.5 10h3v10h-3z"/><path d="M14 10h-2v10h6a5 5 0 0 0 5-5v0a5 5 0 0 0-5-5z"/><path d="M7 2.5c-.5-.5-1.2-.7-1.8-.4-.6.3-.8 1-.5 1.6l.8.8c.5.5 1.2.7 1.8.4.6-.3.8-1 .5-1.6z"/></svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="footer__link" style="display: inline; margin-right: 16px;">Privacy Policy</a>
+                    <a href="#" class="footer__link" style="display: inline;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
